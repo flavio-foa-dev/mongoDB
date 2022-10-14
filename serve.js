@@ -156,8 +156,17 @@ app.post('/auth/register', async(req, res) => {
   } catch (error) {
     res.status(500).json({message: error.message})
   }
+})
 
+// Router delete
 
+app.delete('/user/delete/:id', async(req, res)=> {
+  const id = req.params.id
+  const user = await User.deleteOne({_id : id})
+  if (user.deletedCount < 1 ){
+    return res.status(404).json({message: 'User not found'})
+  }
+  return res.status(200).json({message: 'User deleted'})
 })
 
 // Credencials

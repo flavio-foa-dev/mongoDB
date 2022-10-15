@@ -158,8 +158,16 @@ app.post('/auth/register', async(req, res) => {
   }
 })
 
-// Router delete
+// Router Update/ fazer validacoes
+app.post('/user/update/:id', async(req, res) => {
+  const { id } = req.params
+  const {name, email, password} = req.body
+  const result = await User.updateOne({_id:id}, {name, email, password})
+  console.log(result)
+  return res.status(200).json({message: 'User updated'})
+})
 
+// Router delete
 app.delete('/user/delete/:id', async(req, res)=> {
   const id = req.params.id
   const user = await User.deleteOne({_id : id})

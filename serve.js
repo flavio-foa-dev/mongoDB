@@ -158,13 +158,20 @@ app.post('/auth/register', async(req, res) => {
   }
 })
 
-// Router Update/ fazer validacoes
+// Router Update
 app.post('/user/update/:id', async(req, res) => {
   const { id } = req.params
   const {name, email, password} = req.body
+  const isOkId = mongoose.isValidObjectId(id)
+  console.log(isOkId)
+  if(!isOkId){
+    return res.status(422).json({message: 'Invalid id'})
+  }
+
   const result = await User.updateOne({_id:id}, {name, email, password})
   console.log(result)
-  return res.status(200).json({message: 'User updated'})
+
+  return res.status(200).json({message: 'User updated', modifed: result.modifiedCount})
 })
 
 // Router delete

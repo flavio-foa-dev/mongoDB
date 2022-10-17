@@ -55,6 +55,15 @@ app.get('/user/:id', checkToken, async(req, res) => {
 
 })
 
+// Private Methods Users all
+app.get('/users', async(req, res) => {
+  let users = await User.find()
+  console.log(users)
+
+  res.status(200).json(users)
+
+})
+
 // login User
 app.post('/auth/login', async(req, res) => {
   const {email, password} = req.body;

@@ -11,10 +11,7 @@ Comando	Atalho	Uso
 
 
 Comando	git
--- npm home     -	Abre a página do projeto
--- npm repo	    - Abre o repositório de código do projeto
--- npm audit    -	Executa uma auditoria no projeto para identificar se existe alguma dependência com vulnerabilidade conhecida
--- npm update   -	Atualiza projetos para a última versão respeitando o package.json
+-- npm home     -	Abre npmiza projetos para a última versão respeitando o package.json
 -- npm adduser  - Adiciona um novo usuario no https://registry.npmjs.org para permitir a publicação de pacotes
 -- npm outdated -	Retorna a lista de dependências desatualizadas mostrando a versão mais recente
 -- npm publish  - Faz a publicação do pacote no NPM

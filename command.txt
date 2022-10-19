@@ -1,0 +1,26 @@
+Comando	Atalho	Uso
+
+-- install	   i	 Instala um novo módulo
+-- list	      ls	 Lista os módulos instalados
+-- test	       t	 Executa o script de teste especificado no package.json
+-- global	    -g	 Usado como um sinalizador para instalar um pacote globalmente (não só na pasta do projeto
+-- save	      -S	 Salva o módulo ao instalar
+-- save-exact	-E	 Salva o módulo ao instalar, porém na versão exata mencionada
+-- save-dev	  -D	 Salva o módulo ao instalar, porém como uma dependência de desenvolvimento
+
+
+
+Comando	git
+-- npm home     -	Abre a página do projeto
+-- npm repo	    - Abre o repositório de código do projeto
+-- npm audit    -	Executa uma auditoria no projeto para identificar se existe alguma dependência com vulnerabilidade conhecida
+-- npm update   -	Atualiza projetos para a última versão respeitando o package.json
+-- npm adduser  - Adiciona um novo usuario no https://registry.npmjs.org para permitir a publicação de pacotes
+-- npm outdated -	Retorna a lista de dependências desatualizadas mostrando a versão mais recente
+-- npm publish  - Faz a publicação do pacote no NPM
+
+
+Express Generator == cria um projeto com express prontinho
+npm install express-generator -g
+Depois da instalação, vá até o local/pasta onde você deseja desenvolver o projeto e escreva a seguinte linha de comando abaixo, indicando express <nome do projeto a ser criado>:
+exemplo: express olamundo

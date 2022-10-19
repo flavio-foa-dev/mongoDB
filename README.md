@@ -1,3 +1,4 @@
+
 # test
 
 O termo API (Application Programming Interface ou, em português, Interface de Programação de Aplicações)
@@ -40,3 +41,6 @@ Estes são os principais :
 - 404 (NOT FOUND), rota ou coleção não encontrada;
 - 422 (Unprocessable Entity) A requisição está bem formada mas inabilitada para ser seguida devido a erros semânticos.
 - 500 (INTERNAL SERVER ERROR), ocorreu algum erro no servidor.
+### sistema de login e autenticação 
+#### Ferramentas usadas
+1. mongoDB noSQL

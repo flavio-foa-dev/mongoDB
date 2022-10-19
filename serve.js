@@ -4,11 +4,13 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
+const routerBook = require('./src/router/booksRouter')
 
 const app = express()
 
 // Config JSON res
 app.use(express.json())
+app.use(routerBook)
 
 // Models
 const User = require('./src/models/User');

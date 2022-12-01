@@ -11,7 +11,7 @@ API pode ser definida como uma API SOAP ou REST. O REST é um acrônimo para Rep
 API web = buscar um cep de exemplo
 API de codigo fonte = buscar data
 
-Responsabilidade no REST
+Responsabilidade no REST:
 Existe no REST um principio chamado STATELESS(sem estado),
 
 Requisicoes e Comunicacoes
